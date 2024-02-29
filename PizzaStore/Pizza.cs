@@ -8,22 +8,16 @@ using System.Xml.Linq;
 namespace PizzaStore {
     public class Pizza
     {
-        //indeholder kriterierne for at lave en pizza
-
-
 
         string _name;
-        int _price;
-        string _ingredients;
-        string _ID;
+        double _price;
+
 
 
         public Pizza()
         {
             _name = "";
             _price = 0;
-            _ingredients = "";
-            _ID = "";
         }
 
         public string Name
@@ -31,32 +25,16 @@ namespace PizzaStore {
             get { return _name; }
             set { _name = value; }
         }
-        public int Price
+        public double Price
         {
             get { return _price; }
             set { _price = value; }
         }
 
-        public string Ingredients
-        {
-            get { return _ingredients; }
-            set { _ingredients = value; }
-        }
-
-        public string PizzaID
-        {
-            get { return _ID; }
-            set { _ID = value; }
-        }
-
-        
 
         public override string ToString()
         {
-            return $"Name: {Name} - Price: {Price} kr. Ingredients: {Ingredients} ";
+            return $"{_name}, Price: {_price} kr.";
         }
-
-
-
     }
 }

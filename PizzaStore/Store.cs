@@ -9,41 +9,57 @@ namespace PizzaStore
 {
     public class Store
     {
-        //Laver en nyt Menu-object
-        private Menu _menu;
-
-      
-        //Laver pizza objekter og tilføjer dem til menuen
-        //Laver nye kunder
-        //laver nye ordre
+        
         public void Start()
         {
-            Pizza pizza1 = new Pizza();
+
+            Pizza pizza1 = new()
+            {
+                Name = "Margherita", Price = 69
+            };
+
+            Pizza pizza2 = new ()
+            {
+                Name = "vesuvio", Price = 75
+            };
             
-            pizza1.Name = "margherita";
-            pizza1.Price = 69;
-            pizza1.Ingredients = "Tomato and Cheese";
-            pizza1.PizzaID = "1";
-            _menu.AddToMenu(pizza1.PizzaID,pizza1);
 
+            Pizza pizza3 = new ()
+            {
+            Price = 80,
+            Name = "Calzone"
+            };
+
+            Customer customer1 = new()
+            {
+            CustomerName = "Frederik"
+            };
+
+            Customer customer2 = new ()
+            {
+            CustomerName = "Mary"
+            };
+
+            Customer customer3 = new ()
+            {
+            CustomerName = "Margrethe"
+            };
+
+
+            Order order1 = new (pizza1, customer1);
+            Console.WriteLine(order1);
+
+            Order order2 = new (pizza2, customer2);
+            Console.WriteLine(order2);
+
+            Order order3 = new (pizza3, customer3);
+            Console.WriteLine(order3);
             
-
-            Pizza pizza2 = new Pizza();
-
-            pizza2.Name = "Calzone";
-            pizza2.Price = 75;
-            pizza2.Ingredients = "Tomatom";
-            pizza2.PizzaID = "2";
-            _menu.AddToMenu(pizza2.PizzaID, pizza2);
-
         }
+        
 
 
-        //Henter menuen 
-        public Menu getmenu()
-        {
-            return _menu;
-        }
+
         
 
 
