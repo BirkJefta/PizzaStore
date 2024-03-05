@@ -15,18 +15,20 @@ namespace PizzaStore
 
             Pizza pizza1 = new()
             {
-                Name = "Margherita", Price = 69
+                Name = "Margherita", 
+                Price = 55
             };
 
             Pizza pizza2 = new ()
             {
-                Name = "vesuvio", Price = 75
+                Name = "vesuvio", 
+                Price = 60
             };
             
 
             Pizza pizza3 = new ()
             {
-            Price = 80,
+            Price = 64,
             Name = "Calzone"
             };
 

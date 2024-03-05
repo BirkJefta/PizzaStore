@@ -6,7 +6,8 @@
             Store bigMammasPizza = new();
             
 
-            //kører metoden start, der opretter 3 pizzaer, 3 costumers og 3 orders
+            //kører metoden start, der opretter 3 pizzaer, 3 costumers og 3 orders. Tildeler hver customer et navn.
+            // og pizza en pris
             bigMammasPizza.Start();
             
             
