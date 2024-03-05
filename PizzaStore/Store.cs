@@ -9,7 +9,11 @@ namespace PizzaStore
 {
     public class Store
     {
-        
+        //Start() method creates 3 pizzaobjects, 3 customer objects, and 3 order objects.
+        // For each pizza object a name and price is set
+        // for each customer object a name is set
+        //in the order object, Console.WriteLine is used to print the order class' ToString
+
         public void Start()
         {
 

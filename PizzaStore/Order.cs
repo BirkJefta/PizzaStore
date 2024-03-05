@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 namespace PizzaStore {
     public class Order
     {
+        //The order class gets the customer name, pizza price and pizza name via Tostring from each class
+        // The order class has a method to calculate the total price of the pizza including tax and delviery.
+        // It returns the information as a Tostring which is used in the store class.
         
         
         private Pizza _pizza;

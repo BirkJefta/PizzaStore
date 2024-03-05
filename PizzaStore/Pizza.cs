@@ -9,6 +9,10 @@ namespace PizzaStore {
     public class Pizza
     {
 
+        //the pizzaclass gives the option write a name and a price. 
+        // with this information it returns a ToString with name and price of the pizza
+        // this ToString is used in the order class
+
         string _name;
         double _price;
 
